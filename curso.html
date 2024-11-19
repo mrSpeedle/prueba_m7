@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso - Nicolás Fitness</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-lightblue">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="index.html">Nicolás Fitness</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html"><i class="fa fa-home"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="curso.html"><i class="fa fa-users"></i> Curso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="login.html"><i class="fa fa-user"></i> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="unete.html"><i class="fa fa-shopping-cart"></i> Únete</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container py-5">
+        <!-- Header Section -->
+        <div class="row align-items-center mb-4">
+            <div class="col-md-6">
+                <img src="ph.jpg" alt="Imagen explicativa" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex flex-column">
+                    <h2>Descubre nuestros cursos</h2>
+                    <p id="texto-descriptivo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec sapien et velit varius eleifend. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    <button id="toggle-text" class="btn btn-primary">Minimizar texto</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search and Courses -->
+        <div class="row">
+            <!-- Search Bar -->
+            <div class="col-md-3 mb-3">
+                <input type="text" class="form-control" placeholder="Buscar cursos...">
+            </div>
+            <!-- Courses -->
+            <div class="col-md-9">
+                <div class="row">
+                    <!-- Course Card 1 -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img src="ph.jpg" class="card-img-top" alt="Curso 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Curso 1</h5>
+                                <p class="card-text">Descripción breve del curso 1.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course Card 2 -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img src="ph.jpg" class="card-img-top" alt="Curso 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Curso 2</h5>
+                                <p class="card-text">Descripción breve del curso 2.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course Card 3 -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img src="ph.jpg" class="card-img-top" alt="Curso 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Curso 3</h5>
+                                <p class="card-text">Descripción breve del curso 3.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-lightblue text-center py-3 text-white">
+        © 2024 Nicolás Fitness
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Toggle text visibility
+        const toggleButton = document.getElementById('toggle-text');
+        const textDescriptivo = document.getElementById('texto-descriptivo');
+
+        toggleButton.addEventListener('click', () => {
+            if (textDescriptivo.style.display === 'none') {
+                textDescriptivo.style.display = 'block';
+                toggleButton.textContent = 'Minimizar texto';
+            } else {
+                textDescriptivo.style.display = 'none';
+                toggleButton.textContent = 'Mostrar texto';
+            }
+        });
+    </script>
+</body>
+</html>

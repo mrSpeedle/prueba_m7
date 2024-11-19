@@ -1,0 +1,44 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #5593ac;
+}
+
+.nav-link {
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #005f99;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #87ceeb, #add8e6);
+    text-align: center;
+}
+
+.text-white {
+    color: white;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #5593ac;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    padding: 15px 0;
+    text-align: center;
+
+}
+
